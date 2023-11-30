@@ -1,0 +1,65 @@
+p {
+    text-align: center;
+    color: darkslategray;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+}  
+.result{
+    text-align: center;
+    color: green;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+}  
+
+
+
+
+
+
+.container {
+    position: relative;
+    width: 800px;
+    height: 400px;
+    border: none;
+    margin: auto;
+    
+ 
+    
+  
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+#rock1 {
+    position:absolute;
+    top: 25%;
+    
+    transition: transform 0.3s;
+    
+}
+#paper2 {
+    position: absolute;
+    top: 25%;
+    left: 32%;
+    transition: transform 0.3s;
+}
+#scissors3 {
+    position: absolute;
+    top: 25%;
+    left: 66%;
+    transition: transform 0.3s;
+}
+.choice-image:active{
+    transform: translate(20px, -20px);
+}
+
+
+@media screen and (max-width:600px){
+    #rock1, #paper2, #scissors3{
+        position: static;
+        width: 100%;
+    }
+    
+} 
+    
